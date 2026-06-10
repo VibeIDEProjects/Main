@@ -15,6 +15,7 @@
 |----|----------|------|----|
 | 1 | [BookCatalog](https://github.com/VibeIDEProjects/BookCatalog) | PHP 8.2, Yii2 Advanced, PostgreSQL, Nginx | [ТЗ →](./docs/bookcatalog.md) |
 | 2 | BuzzBang 🚧 | Angular 21, Node.js/Express/Parse Server, Ionic/Capacitor, MongoDB, TypeScript | [ТЗ →](./docs/buzzbang.md) |
+| 3 | [TgParser](https://github.com/VibeIDEProjects/TgParser) | Python 3.11+, Telethon, Playwright, Textual, Click | [ТЗ →](./docs/tgparser.md) |
 
 ---
 
@@ -33,6 +34,12 @@
   - **Mobile App**: Ionic, Angular 21, Capacitor (Android/iOS)
 - ⏳ Статус: **в разработке** — репозиторий появится после первого пуша
 
+### TgParser
+**Telegram-канал парсер** — извлечение сообщений из открытых (MTProto) и закрытых (Web) каналов.
+- 🌐 Репозиторий: [github.com/VibeIDEProjects/TgParser](https://github.com/VibeIDEProjects/TgParser)
+- 🛠 Стек: Python 3.11+, Telethon, Playwright, BeautifulSoup, Click, Textual (TUI), PyInstaller
+- 📦 Публикуется в PyPI как `tgparser-cli`
+
 ---
 
 ## 📁 Структура репозитория
@@ -40,9 +47,12 @@
 ```
 /
 ├── docs/               # Технические задания (ТЗ) по каждому проекту
-├── .gitignore          # Игнорируются все каталоги, кроме docs/
+├── projects/           # Снапшоты README/roadmap уже сделанных проектов (только доки!)
+├── .gitignore          # projects/ и .vibe/ полностью игнорируются
 └── README.md           # Этот файл
 ```
+
+> ⚠️ **Важно.** Папка `projects/` в этом репо содержит **только документацию** (README, LICENSE, roadmap) по уже завершённым проектам. Исходный код, тесты, билды, `.venv/`, `dist/` и runtime-данные живут **только** в отдельных репозиториях (`github.com/VibeIDEProjects/<ProjectName>`) и в этот моно-репо не попадают (см. `.gitignore:2`).
 
 ---
 
